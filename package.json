@@ -1,0 +1,19 @@
+{
+  "name": "electronic-portfolio",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^1.0.2",
+    "aos": "^2.3.4",
+    "bigger-picture": "^1.1.6",
+    "svelte": "^3.49.0",
+    "svelte-typewriter": "^3.1.2",
+    "vite": "^3.1.0"
+  }
+}

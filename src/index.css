@@ -1,0 +1,57 @@
+@import url('https://cdn.jsdelivr.net/npm/victormono@latest/dist/index.min.css');
+
+:root {
+  --bg: #282c34;
+  --bg_h: #21252b;
+  --bg_s: #2c313a;
+
+  --fg: #abb2bf;
+  --fg_h: #a8afbd;
+  --fg_s: #b6bdc8;
+
+  --red: #e06c75;
+  --red_h: #be5046;
+
+  --yellow_s: #e5c07b;
+  --yellow_h: #d19a66;
+
+  --gray: #4b5263;
+  --gray_s: #5c6370;
+
+  --blue: #61afef;
+  --magenta: #c678dd;
+  --green: #98c379;
+  --cyan: #56b6c2;
+}
+
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: 'Victor Mono';
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 38rem;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.title {
+  color: var(--magenta);
+  font-size: 1.2rem;
+}
+
+.subtitle {
+  color: var(--green);
+  font-size: 1.1rem;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
