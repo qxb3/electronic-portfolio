@@ -1,4 +1,4 @@
-<div data-aos="fade-down" data-aos-delay="50" class="topbar">
+<div data-aos="fade-down" data-aos-delay="50" data-aos-once="true" class="topbar">
   <div class="container">
     <h2 class="title">Salimbagat's Portfolio</h2>
   </div>

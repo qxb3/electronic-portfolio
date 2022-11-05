@@ -55,7 +55,7 @@
   }
 </script>
 
-<div data-aos="fade-up" data-aos-delay="600" class="activities-container">
+<div data-aos="fade-up" data-aos-delay="600" data-aos-once="true" class="activities-container">
   <h1 class="title">Activites:</h1>
 
   <div class="activities">
