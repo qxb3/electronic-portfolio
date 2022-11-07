@@ -10,37 +10,41 @@
       id: 'a',
       title: 'Rotoscope',
       imgs: [
-        '/activities/rotoscope.png'
+        {
+          src: '/activities/rotoscope.png',
+          width: '720',
+          height: '1344'
+        }
       ]
     },
     {
       id: 'b',
       title: 'Character Design: Whole Body Turn Around (Digital)',
       imgs: [
-        '/activities/character_design_whole_body_turn_around_digital_1.png',
-        '/activities/character_design_whole_body_turn_around_digital_2.png'
+        { src: '/activities/character_design_whole_body_turn_around_digital_1.png' },
+        { src: '/activities/character_design_whole_body_turn_around_digital_2.png' }
       ]
     },
     {
       id: 'c',
       title: 'Character Design: Whole Body Turn Around (Gif)',
       imgs: [
-        '/activities/character_design_whole_body_turn_around_gif_1.gif',
-        '/activities/character_design_whole_body_turn_around_gif_2.gif'
+        { src: '/activities/character_design_whole_body_turn_around_gif_1.gif' },
+        { src: '/activities/character_design_whole_body_turn_around_gif_2.gif' }
       ]
     },
     {
       id: 'd',
       title: 'Character Design: Mouth Chart (Digital)',
       imgs: [
-        '/activities/character_design_mouth_chart_digital.png'
+        { src: '/activities/character_design_mouth_chart_digital.png' }
       ]
     },
     {
       id: 'e',
       title: 'Character Design: Head Turn (Digital)',
       imgs: [
-        '/activities/character_design_head_turn_digital.png'
+        { src: '/activities/character_design_head_turn_digital.png' }
       ]
     }
   ]
@@ -64,19 +68,21 @@
         id={activity.id}
         class="activity"
         on:click|preventDefault={() => openImage(activity.id)}
-        href={activity.imgs[0]}>
+        href={activity.imgs[0].src}>
 
         {#each activity.imgs as img}
           <a
             data-caption={activity.title}
-            data-img={img}
-            data-thumb={img}
-            href={activity.img}>
+            data-img={img.src}
+            data-width={img.width || '1920'}
+            data-height={img.height || '1080'}
+            data-thumb={img.src}
+            href={img.src}>
             <div style="display: none;"></div>
           </a>
         {/each}
 
-        <img src="{activity.imgs[0]}" alt="Activity">
+        <img src="{activity.imgs[0].src}" alt="Activity">
       </a>
     {/each}
   </div>
